@@ -23,7 +23,7 @@ for i in range(n):
     elif scores[i]>=31 and scores[i]<=60:
         valid=valid+1
         medium_risk=medium_risk+[scores[i]]
-    elif scores[i]>=60 and scores[i]<100:
+    elif scores[i]>=61 and scores[i]<100:
         valid=valid+1
         high_risk=high_risk+[scores[i]]
     else:
@@ -47,6 +47,7 @@ print(critical_risk)
 print("Total valid entries :",valid)
 print("Total ignored entries :",invalid)
 print("Removed due to personalisation :",count)
+
 
 
 
